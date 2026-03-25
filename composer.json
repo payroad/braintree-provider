@@ -1,0 +1,29 @@
+{
+    "name": "payroad/braintree-provider",
+    "description": "Braintree card payment provider for Payroad",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "payroad/payroad-core": "@dev",
+        "braintree/braintree_php": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Payroad\\Provider\\Braintree\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../payroad-core"
+        }
+    ]
+}
